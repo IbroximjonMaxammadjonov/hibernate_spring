@@ -15,10 +15,15 @@
 
         <!-- Hibernate Configuration -->
         <property name="hibernate.show_sql">true</property>
-        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.hbm2ddl.auto">create-drop</property>
+
 
         <!-- Annotatsiya qilingan Entity-larni avtomatik yuklash -->
-        <mapping class="com.ibroximjon.Alien"/>
+        <mapping class="com.ibroximjon.model.User"/>
+        <mapping class="com.ibroximjon.model.Trainee"/>
+        <mapping class="com.ibroximjon.model.Trainer"/>
+        <mapping class="com.ibroximjon.model.TrainingType"/>
+        <mapping class="com.ibroximjon.model.Training"/>
 
 
 
